@@ -1,7 +1,6 @@
 .rodape {
   background: #6278F7;
   display: flex;
-  flex: 1;
   justify-content: space-between;
   align-items: center;
   padding: 80px 30px;
@@ -16,4 +15,10 @@
 .rodape section p {
   font-size: 24px;
   color: antiquewhite;
+}
+@media (max-width: 1040px) {
+  .rodape {
+    flex-direction: column;
+    gap: 30px;
+  }
 }
