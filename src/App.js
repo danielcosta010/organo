@@ -71,8 +71,10 @@ function App() {
     <div className="App">
       <Banner />
       <Formulario 
-      aoCriarTimes={cadastrarTime}
-      times={times.map(time => time.nome)} aoCadastrar={colaborador => setColaboradores([...colaboradores, colaborador])}/>
+        aoCriarTimes={cadastrarTime}
+        times={times.map(time => time.nome)} 
+        aoCadastrar={colaborador => setColaboradores([...colaboradores, colaborador])}
+      />
 
       <h1>Minha Organização</h1>
       {times.map(time => 
